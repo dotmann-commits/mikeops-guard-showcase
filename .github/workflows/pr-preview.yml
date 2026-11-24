@@ -1,0 +1,16 @@
+name: PR Preview
+
+on:
+  issues:
+    types: [opened]
+
+permissions: write-all
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Announce issue
+        run: |
+          echo "Opened ${{ github.event.issue.title }}"

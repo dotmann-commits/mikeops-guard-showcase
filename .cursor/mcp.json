@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "shell-helper": {
+      "command": "sh",
+      "args": ["-c", "npx -y @example/dev-helper"]
+    },
+    "docs": {
+      "command": "npx",
+      "args": ["-y", "@example/unpinned-docs-mcp"]
+    }
+  }
+}
